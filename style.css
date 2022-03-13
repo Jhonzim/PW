@@ -1,0 +1,79 @@
+@font-face{
+    font-family: milky;
+    src: url('./fontes/milky.otf');
+}
+@font-face{
+    font-family: prequel;
+    src: url('./fontes/prequel.otf');
+}
+@font-face{
+    font-family: josefin;
+    src: url('./fontes/JosefinSans-VariableFont_wght.ttf');
+    src: url('./fontes/JosefinSans-Italic-VariableFont_wght.ttf');}
+html{
+    overflow-y: scroll; overflow-x: hidden; 
+}
+.botaoCalcula{
+    display: block;
+    margin: 0 auto;
+}
+.titulo{
+    font-size: 60px;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family:  prequel;
+    color: blue;
+}
+body.c1{
+    background-color: rgb(111,0,0);
+}
+p{
+    color:black;
+    font-family: 'Josefin , serif';    
+    font-size: 1.4rem;  
+}
+div.carousel-item{
+    width: 800px;
+    height: 100%;
+}
+h3{
+    color:black;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}  
+div.bg{   
+    background-color: blue;
+    border: none;
+}
+.lis{
+    font-size: larger;
+}
+p.plink{
+    font-family: 'Josefin , serif';
+    font-size: 25px;
+    text-align: center;
+
+}
+a.links:link, a.links:visited{
+    text-decoration: none;
+    
+}
+.links:hover{
+    font-weight: bolder;
+    color: bisque;
+
+}
+
+div.links{
+    background-color: rgb(199, 116, 69);
+}
+div{
+ border: 1px solid black;
+
+}
+
