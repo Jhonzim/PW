@@ -5,7 +5,7 @@
  	    }
 ?>
 <!DOCTYPE html>
-<html lang="p">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
     <meta name="description" content="Alimentos salgados">
