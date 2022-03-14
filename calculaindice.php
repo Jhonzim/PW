@@ -5,7 +5,7 @@
 				// recebendo dados provinientes da pagina calculo			
 				$nome=$_POST["txtnome"];
 				$qtd=$_POST["txtqtd"];
-				$valor=$_POST["txtvalor"	$total=($qtd * $valor);
+				$valor=$_POST["txtvalor"]	$total=($qtd * $valor);
 				
 				if(!isset($_SESSION['historico'])){
 					$_SESSION['historico']="";
