@@ -25,15 +25,23 @@
                 <h1 class="titulo">Quitutes da Rê</h1>
             </div>
             <div class="col">
+                    <div class="col">
+                        <?php
+                    if(isset($_SESSION['nomecli'])){
+					echo ("<label>Login Bem sucedido! &nbsp  </label>".$_SESSION['nomecli']);
+					}
+                    ?>
+                    </div>
                 <div class="col" id="telaLogin">
-                    <p>Login:</p> <small>Usuario:</small>   
+                    <small>Usuario:</small>   
                     <input type="text" name="txtlogin" maxlength="20" required size="12">
+                    <input type="submit" class="" value="Sair" style = "width:48px;height:30px">
                     
                 </div>
                 <div class="col">
                     <small>Senha : &nbsp</small>
                     <input type="text" name="senha" maxlength="20" required size='12'>
-                    <input type="submit" class="" value="Ok" style = "width:48px;height:30px">
+                    <input type="submit" class="" value="Login" style = "text-align: center;">
 
                 </div>
                 <div class="col-6">

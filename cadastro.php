@@ -21,28 +21,29 @@
             </div>
         </div>
     </div>
-    <form action="insert.php" method="POST" name='insert'></form>
-    <div class="form-group">
-        <div class="row margimInput">
-            <div class="row ">
-                <label>Coloque seu nome</label>
-                <input type="text" maxlength="20" required size='30' name="imputName"class="form-control" >
+    <form action="insert.php" method="POST" name='insert'>
+        <div class="form-group">
+            <div class="row margimInput">
+                <div class="row ">
+                    <label>Coloque seu nome</label>
+                    <input type="text" maxlength="20" required size='30' name="imputName"class="form-control" >
+                </div>
+                <div class="row">
+                    <label>Coloque seu CPF</label>
+                    <input type="text" maxlength="20" required size='30' name="imputCpf"class="form-control" >
+                </div>
+                <div class="row">
+                    <label>Digite sua senha</label>
+                    <input type="text" maxlength="20" required size='30' name="imputSenha"class="form-control" >
+                </div>
             </div>
             <div class="row">
-                <label>Coloque seu CPF</label>
-                <input type="text" maxlength="20" required size='30' name="imputCpf"class="form-control" >
-            </div>
-            <div class="row">
-                <label>Digite sua senha</label>
-                <input type="text" maxlength="20" required size='30' name="imputSenha"class="form-control" >
+                <div class="col botao">
+                <input type="submit" name="imputSend" class="btn btn-primary"value="Cadastrar">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col botao">
-            <input type="submit" name="imputSend" class="btn btn-primary"value="Cadastrar">
-            </div>
-        </div>
-    </div>
+    </form>
     
 </body>
 </html>
