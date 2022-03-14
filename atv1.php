@@ -18,25 +18,27 @@
 </head>
 <body class="c1">
     <div class="conteiner-fluid">
-        <form action="login.php" method="post" name="login">
+        <form action="bd.php" method="POST" name="login">
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
                 <h1 class="titulo">Quitutes da Rê</h1>
             </div>
             <div class="col">
-                <div class="col">
-                    <p>Login:</p>
+                <div class="col" id="telaLogin">
+                    <p>Login:</p> <small>Usuario:</small>   
+                    <input type="text" name="txtlogin" maxlength="20" required size="12">
+                    
                 </div>
                 <div class="col">
-                    <input type="text" name="txlogin" maxlength="20" required>
-                    <input type="submit" class="btn btn-primary" value="Ok" >
+                    <small>Senha : &nbsp</small>
+                    <input type="text" name="senha" maxlength="20" required size='12'>
+                    <input type="submit" class="" value="Ok" style = "width:48px;height:30px">
 
                 </div>
-                <div class="col">
-                    <p>Novo?<a href="calculo.php" class="links a-login">Cadastre-se aqui.</p>
-
-                </div>
+                <div class="col-6">
+                    <p class="novo">Novo?<a href="cadastro.php" class="links a-login">Cadastre-se.</p>
+                </div> 
             </div>
         </div>
         </form>

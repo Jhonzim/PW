@@ -22,8 +22,11 @@ html{
 }
 .a-login{
     color: black;
+    font-size: 16px;
 }
-
+.novo{
+    font-size: 16px;
+}
 
 .botao{
     padding-top: 40px;
