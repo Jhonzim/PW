@@ -24,23 +24,37 @@
     <form action="insert.php" method="POST" name='insert'>
         <div class="form-group">
             <div class="row margimInput">
-                <div class="row ">
-                    <label>Coloque seu nome</label>
-                    <input type="text" maxlength="20" required size='30' name="imputName"class="form-control" >
+                <div class="row formulario">
+                        <div class="col"></div>
+                        <div class="col bginput topRadius" style = "padding: 15px;">
+                            <label>Coloque seu nome</label>
+                            <input type="text" maxlength="20" required size='10' name="imputName"class="form-control" >
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row ">
+                        <div class="col"></div>
+                        <div class="col bginput" style = "padding: 15px;">
+                            <label>Coloque seu CPF</label>
+                            <input type="text" maxlength="20" required size='10' name="imputCpf"class="form-control" >
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row ">
+                        <div class="col"></div>
+                        <div class="col bginput bottomRadius" style = "padding: 15px;">
+                            <label>Digite sua senha - 8 digitos no máximo</label>
+                            <input type="text" maxlength="8" required size='10' name="imputSenha"class="form-control" >
+                        </div>
+                        <div class="col"></div>
+                    </div>
                 </div>
-                <div class="row">
-                    <label>Coloque seu CPF</label>
-                    <input type="text" maxlength="20" required size='30' name="imputCpf"class="form-control" >
-                </div>
-                <div class="row">
-                    <label>Digite sua senha</label>
-                    <input type="text" maxlength="20" required size='30' name="imputSenha"class="form-control" >
-                </div>
-            </div>
             <div class="row">
-                <div class="col botao">
+                <div class="col-4"></div>
+                <div class="col-4 botao ">
                 <input type="submit" name="imputSend" class="btn btn-primary"value="Cadastrar">
                 </div>
+                <div class="col-4"></div>
             </div>
         </div>
     </form>

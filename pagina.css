@@ -16,6 +16,14 @@ html{
 .titulo{
     font-size: 60px;
 }
+input{
+    display: block;
+}
+.formulario{
+    align-items: center;
+    text-align: center;
+    
+}
 .margimInput{
     padding-left: 30px;
     padding-right: 30px;
@@ -32,6 +40,7 @@ html{
     padding-top: 40px;
     text-align: center;
     align-items: center;
+    
 }
 .linkCar:link, .linkCar:visited{
     color: rgb(177, 238, 247);
@@ -96,4 +105,17 @@ small{
 div.links{
     background-color: rgb(199, 116, 69);
 }
+.bginput{
+    background-color: bisque;
+    text-align: center;
+    }
+.topRadius{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.bottomRadius{
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
 

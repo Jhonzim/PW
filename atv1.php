@@ -34,14 +34,15 @@
                     </div>
                 <div class="col" id="telaLogin">
                     <small>Usuario:</small>   
-                    <input type="text" name="txtlogin" maxlength="20" required size="12">
-                    <input type="submit" class="" value="Sair" style = "width:48px;height:30px">
+                    <input type="text" name="txtlogin" maxlength="20" required size="12" class="form-control">
+                    
                     
                 </div>
                 <div class="col">
                     <small>Senha : &nbsp</small>
-                    <input type="text" name="senha" maxlength="20" required size='12'>
-                    <input type="submit" class="" value="Login" style = "text-align: center;">
+                    <input type="text" name="senha" maxlength="20" required size='12' class="form-control">
+                    <input type="submit" class="btn btn-primary" value="Login" style = "text-align: center;">
+                    <input type="submit" class="btn btn-primary" value="Sair" style = "text-align: center;">
 
                 </div>
                 <div class="col-6">
