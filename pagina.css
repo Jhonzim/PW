@@ -13,109 +13,101 @@
 html{
     overflow-y: scroll; overflow-x: hidden; 
 }
-.titulo{
-    font-size: 60px;
+.linhaInicial{
+    background-color: brown;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-input{
+img.img-fluid{
+    width: 750px;
+    height: 450px;
+    object-fit: fill;
+}
+.menuLogin, ul, li, a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.menuLogin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu{
+    display: flex;
+
+}
+.menu  li{
+    margin-left: 4px;       
+}
+.menu  li a{
+    padding: 10px;
     display: block;
 }
-.formulario{
-    align-items: center;
-    text-align: center;
-    
-}
-.margimInput{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.a-login{
-    color: black;
-    font-size: 16px;
-}
-.novo{
-    font-size: 16px;
-}
+.aLogin{
+    text-decoration: none;
+    color: white;
 
-.botao{
-    padding-top: 40px;
-    text-align: center;
-    align-items: center;
-    
 }
-.linkCar:link, .linkCar:visited{
-    color: rgb(177, 238, 247);
+a.aLogin:link, .aLogin:visited{
     text-decoration: none;
     
 }
-h1{
-    text-align: center;
-    font-size: 60px;
-    font-family:  prequel;
-    color: rgb(3, 44, 32);
-}
-body.c1{
-    background-color: #94e9ae;
-}
-p{
-    color:black;
-    font-family: 'Josefin , serif';    
-    font-size: 1.4rem;  
-}
-div.carousel-item{
-    width: 800px;
-    height: 100%;
-}
-h3{
-    color:black;
-}
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-h3.item , p.item{
-    color: rgb(177, 238, 247);
-} 
-div.carousel-caption.bg{  
-    background-color: rgba(0,0,0,0.6);
-    border: none;
-}
-.lis{
-    font-size: larger;
-}
-p.plink{
-    font-family: 'Josefin , serif';
-    font-size: 25px;
-    text-align: center;
+.aLogin:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 1.2rem;
 
 }
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    color: rgb(15, 13, 13);
+}
+.ulIndex{
+    padding: 20px;
+    align-items: center;
+}
+.ulIndex ul{
+    display: flex;
+    justify-content: space-around;
+}
+.ulIndex ul li a{
+    color: black;
+}
+/*#formPrincipal{
+    background-color: gray;
+    border-bottom: 1.2px solid black;
+    margin-bottom: 1.5rem;
+
+}*/
 a.links:link, a.links:visited{
     text-decoration: none;
     
 }
 .links:hover{
     font-weight: bolder;
-    color: rgb(11, 65, 145);
+    color: brown;
 
 }
-small{
-    color: black;
+.Carouselclass{
+    align-items: center;
 }
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.carousel-caption.bg{  
+    background-color: rgba(0,0,0,0.6);
+    border: none ;
+    
+}
+div.carousel-item{
+    width: 800px;
+    height: 100%;
 
-div.links{
-    background-color: rgb(199, 116, 69);
 }
-.bginput{
-    background-color: bisque;
-    text-align: center;
-    }
-.topRadius{
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-}
-.bottomRadius{
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-}
-
-

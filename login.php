@@ -16,19 +16,19 @@
     <div class="conteiner-fluid">
         <div class="row">
             <div class="col">
-                <h1 class="h1Cadastro">Cadastre-se Aqui</h1>
+                <h1 class="h1Cadastro">Faça Login</h1>
                 <p class="botao">Preencha com seus dados</ps>
             </div>
         </div>
     </div>
-    <form action="insert.php" method="POST" name='insert'>
+    <form action="bd.php" method="POST" name='insert'>
         <div class="form-group">
             <div class="row margimInput">
                 <div class="row formulario">
                         <div class="col"></div>
                         <div class="col bginput topRadius" style = "padding: 15px;">
-                            <label>Coloque seu nome</label>
-                            <input type="text" maxlength="20" required size='10' name="imputName"class="form-control" >
+                            <label>Coloque seu CPF</label>
+                            <input type="text" maxlength="20" required size='10' name="txtlogin"class="form-control" >
                         </div>
                         <div class="col"></div>
                     </div>
@@ -36,15 +36,7 @@
                         <div class="col"></div>
                         <div class="col bginput" style = "padding: 15px;">
                             <label>Coloque seu CPF</label>
-                            <input type="text" maxlength="20" required size='10' name="imputCpf"class="form-control" >
-                        </div>
-                        <div class="col"></div>
-                    </div>
-                    <div class="row ">
-                        <div class="col"></div>
-                        <div class="col bginput bottomRadius" style = "padding: 15px;">
-                            <label>Digite sua senha - 8 digitos no máximo</label>
-                            <input type="text" maxlength="8" required size='10' name="imputSenha"class="form-control" >
+                            <input type="text" maxlength="8" required size='10' name="senha"class="form-control" >
                         </div>
                         <div class="col"></div>
                     </div>
