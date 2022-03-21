@@ -1,5 +1,5 @@
 <?php
- //start_session();
+ session_start()
  
 ?>
 <!DOCTYPE html>
@@ -14,47 +14,65 @@
 </head>
 <body class="c1">
     <div class="conteiner-fluid">
+        <div class="row linhaInicial">
+            <div class="col menuLogin menuCalculo">
+            <h1 class="titulo"><a href="atv1.php" class="linkIndex"><strong> Quitutes da Rê </strong></a></h1>
+                <ul class="menu">
+                    <li>
+                        <?php
+                            if(isset($_SESSION['nomecli'])){
+					        echo ("<a href='logof.php' class='aLogin sessionLogin'>Desconectar de ". $_SESSION['nomecli']."</a>");
+					        }
+                        ?>
+                    </li>
+                    <li>
+                        <?php
+                            if(!isset($_SESSION['nomecli'])){
+					        echo ("<a class='aLogin' href='login.php'>Login</a>");
+					        }
+                        ?></li>
+                    <li>
+                        <form autocomplete="off"method="POST" action="busca.php" class="boxPesquisa">
+                            <input type="text" placeholder="Pesquisar" class="pesquisaInput" name="pesquisa">
+                            <button type="submit" class="pesquisaBotao"><img  src="/image/lupa.svg" alt="Lupa" ></button>
+                        </form>                
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="row">
-            <div class="col">
-                <h1 class="h1Cadastro">Cadastre-se Aqui</h1>
-                <p class="botao">Preencha com seus dados</ps>
+            <div class="subtituloLogin">
+                <p class="tituloLogin titulo">Cadastre-se Aqui</p>
+                <p class="">Preencha com seus dados</ps>
             </div>
         </div>
     </div>
-    <form action="insert.php" method="POST" name='insert'>
-        <div class="form-group">
-            <div class="row margimInput">
-                <div class="row formulario">
-                        <div class="col"></div>
-                        <div class="col bginput topRadius" style = "padding: 15px;">
-                            <label>Coloque seu nome</label>
-                            <input type="text" maxlength="20" required size='10' name="imputName"class="form-control" >
-                        </div>
-                        <div class="col"></div>
-                    </div>
-                    <div class="row ">
-                        <div class="col"></div>
-                        <div class="col bginput" style = "padding: 15px;">
-                            <label>Coloque seu CPF</label>
-                            <input type="text" maxlength="20" required size='10' name="imputCpf"class="form-control" >
-                        </div>
-                        <div class="col"></div>
-                    </div>
-                    <div class="row ">
-                        <div class="col"></div>
-                        <div class="col bginput bottomRadius" style = "padding: 15px;">
-                            <label>Digite sua senha - 8 digitos no máximo</label>
-                            <input type="text" maxlength="8" required size='10' name="imputSenha"class="form-control" >
-                        </div>
-                        <div class="col"></div>
-                    </div>
+    <form autocomplete="off"action="insert.php" method="POST" name='insert'>
+        <div class="formCadastro">
+            <div class="inputCadastro">
+                <div class="row">                       
+                    <div class="col bginput topRadius" style = "padding: 15px;">
+                        <label>Coloque seu nome</label>
+                        <input type="text" maxlength="20" required size='10' name="imputName"class="form-control" >
+                    </div>                        
                 </div>
+                <div class="row ">                       
+                    <div class="col bginput" style = "padding: 15px;">
+                        <label>Coloque seu CPF</label>
+                        <input type="text" maxlength="20" required size='10' name="imputCpf"class="form-control" >
+                    </div>                       
+                </div>
+                <div class="row ">                       
+                    <div class="col bginput bottomRadius" style = "padding: 15px;">
+                        <label>Digite sua senha</label>
+                        <input type="text" maxlength="8" required size='20' name="imputSenha"class="form-control" placeholder="8 digitos no máximo" >
+                    </div>                        
+                </div>
+            </div>
             <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4 botao ">
-                <input type="submit" name="imputSend" class="btn btn-primary"value="Cadastrar">
+                <div class="botaoLogin">
+                <input type="submit" name="imputSend" class="botaoSubmit"value="Cadastrar">
                 </div>
-                <div class="col-4"></div>
             </div>
         </div>
     </form>

@@ -19,11 +19,11 @@
       do{
       $_SESSION['idcli']=$al['id'];
       $_SESSION['nomecli']=$al['nome'];
-      }while($al=mysqli_fetch_assoc($return));
+      }while($al=mysqli_fetch_assoc($retorno));
     }
     else{
       echo('<script>alert("Usuario ou senha -- inválidos")</script>');
     }
-    echo("<script>window.location='http://localhost/atv1.php'</script>")
+      echo("<script>window.location='http://localhost/atv1.php'</script>")
 ?>
   

@@ -10,7 +10,12 @@
  $pwd='';
  
  $con = mysqli_connect($host, $user, $pwd, $bd) or die ('Impossivel abrir esta base de dados');
+
  $query= "INSERT INTO cadastro values ('default','".$cpf."', '".$nome."','".$senha."')";
- $retorno = mysqli_query($con, $query);
+
+ $retorno = mysqli_query($con, $query) or die ("Não foi possivel a inseção de dados");
+ 
+ echo("<script>alert('Cadastro concluido com sucesso');</script>");
+ 
  echo("<script>window.location='http://localhost/atv1.php'</script>");
 ?>

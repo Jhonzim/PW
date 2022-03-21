@@ -22,13 +22,26 @@
             <div class="col menuLogin">
                 <h1 class="titulo"><strong> Quitutes da Rê </strong></h1>
                 <ul class="menu">
-                    <li><a class="aLogin" href="cadastro.php">Cadastre-se aqui</a></li>
-                    <li><a class="aLogin" href="login.php">Login</a></li>
                     <li>
-                        <form method="GET" action="busca.php" class="boxPesquisa">
-                            <input type="text" placeholder="Pesquisar" class="pesquisaInput">
+                        <?php
+                            if(isset($_SESSION['nomecli'])){
+					        echo ("<a href='logof.php' class='aLogin sessionLogin'>Desconectar de ". $_SESSION['nomecli']."</a>");
+					        }
+                        ?>
+                    </li>
+                    <li><a class="aLogin" href="cadastro.php">Cadastre-se aqui</a></li>
+                    <li>
+                        <?php
+                            if(!isset($_SESSION['nomecli'])){
+					        echo ("<a class='aLogin' href='login.php'>Login</a>");
+					        }
+                        ?></li>
+                    <li>
+                    <li>
+                        <form autocomplete="off"method="POST" action="busca.php" class="boxPesquisa">
+                            <input type="text" placeholder="Pesquisar" class="pesquisaInput" name="pesquisa">
                             <button type="submit" class="pesquisaBotao"><img  src="/image/lupa.svg" alt="Lupa" ></button>
-                        </div>                
+                        </form>                
                     </li>
                 </ul>
             </div>
@@ -37,7 +50,7 @@
          <ul class="linksIndex">
              <li><a class="links" href="calculo.php">TABULE</a></li>
              <li><a class="links" href="bolosal.html"> TORTAS </a></li>
-             <li><a class="links" href="Quibe.html"> QUIBES </a></li>
+             <li><a class="links" href="Quibe.php"> QUIBES </a></li>
              <li><a class="links" href="minipz.html"> MINI PIZZAS </a></li>
          </ul>
         </div>
@@ -93,14 +106,14 @@
             </div>
             <div class="col"></div>
         </div>
-            <div class="rodape">
+            <footer class="rodape">
                 <h2>Entre em contato</h2>
                 <ul>
                     <li>Número de contato</li>
                     <li>Endereço da empresa</li>
                     <li>Instagram: <a href="#">@instagram</a></li>
                 </ul>
-            </div>
+            </footer>
     </div>
 </div>
 <script src="js/jquery-3.2.1.min.js"></script>

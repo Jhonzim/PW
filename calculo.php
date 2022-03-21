@@ -18,8 +18,27 @@
 				<div class="col menuLogin menuCalculo">
 					<h1 class="titulo"><a href="atv1.php" class="linkIndex"><strong> Quitutes da Rê </strong></a></h1>
 					<ul class="menu">
+						<li>
+							<?php
+								if(isset($_SESSION['nomecli'])){
+								echo ("<a href='logof.php' class='aLogin sessionLogin'>Desconectar de ". $_SESSION['nomecli']."</a>");
+								}
+							?>
+						</li>
 						<li><a class="aLogin" href="cadastro.php">Cadastre-se aqui</a></li>
-						<li><a class="aLogin" href="login.php">Login</a></li>
+						<li>
+							<?php
+								if(!isset($_SESSION['nomecli'])){
+								echo ("<a class='aLogin' href='login.php'>Login</a>");
+								}
+							?></li>
+						<li>
+						<li>
+							<form method="POST" action="busca.php" class="boxPesquisa">
+								<input type="text" placeholder="Pesquisar" class="pesquisaInput" name="pesquisa">
+								<button type="submit" class="pesquisaBotao"><img  src="/image/lupa.svg" alt="Lupa" ></button>
+							</form>                
+                    	</li>
 					</ul>
 				</div>
 			</div>
@@ -28,7 +47,7 @@
 			</div>
 			<form method="POST" action="calculaindice.php" name="formulario" >
 				<section class=" formularioCalculo">
-					<div class="linhaCalculo">
+					<div class="linhaCalculo inputColorwhite">
 						<div class="col areaInput">
 							<label>Nome</label>
 							<input type="text" required class="text-upercase form-control" required autofocus name="txtnome">
@@ -44,7 +63,7 @@
 					</div>
 					<div class="row ">
 						<div class="col botao">
-							<input type="submit" class="btn btn-primary" href="calculaindice.php" value="Calcular">
+							<input type="submit" class="botaoSubmit" href="calculaindice.php" value="Calcular">
 						</div>
 					</div>
 					<?php
