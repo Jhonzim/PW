@@ -8,65 +8,168 @@
 }
 @font-face{
     font-family: josefin;
-    src: url('./fontes/JosefinSans-VariableFont_wght.ttf');
-    src: url('./fontes/JosefinSans-Italic-VariableFont_wght.ttf');}
+    src: url('./fontes/JosefinSans-VariableFont_wght.ttf');}
+@font-face {
+    font-family: Roboto;
+    src: url('/fontes/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: Roboto Slab;
+    src: url('/fontes/RobotoSlab-VariableFont_wght.ttf');
+}
+/*Classes universais */
+
+/*Links*/
+.linkIndex{
+    text-decoration: none;
+    color:black;
+}
+.linkIndex:visited, .linkIndex:link{
+    text-decoration: none;
+}
+.linkIndex:hover{
+    color: black;
+}
+
+/*Fim Classes*/
 html{
     overflow-y: scroll; overflow-x: hidden; 
 }
+
 .linhaInicial{
-    background-color: brown;
+    background-color: #a52a2a;
     padding: 20px;
     margin-bottom: 20px;
 }
+
 img.img-fluid{
+    max-width: none;
     width: 750px;
-    height: 450px;
+    height: 350px;
     object-fit: fill;
 }
+
 .menuLogin, ul, li, a{
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 1.2rem;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab';
 }
+
 .menuLogin{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .menu{
     display: flex;
 
 }
+
 .menu  li{
     margin-left: 4px;       
 }
-.menu  li a{
+
+.aLogin{
     padding: 10px;
     display: block;
+    align-self: center;
+}
+
+.menuLogin, ul, li, a{
+    align-self: center;
+}
+
+.boxPesquisa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 40px;
+    padding: 0;
+    height: 35px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.boxPesquisa img{
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+.pesquisaBotao{
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5;
+    border: 0;
+
+}
+.boxPesquisa input{
+    padding: 0;
+    background: none;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    font-size: 14px;
+    line-height: 30px;
+    width: 0;
+    transition: .5s;
+    font-family: Roboto Slab;
+    font-style: normal;
+
+}
+::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, .5);
+    font-size: 14px;
+    font-family: Roboto Slab;
+}
+.boxPesquisa:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+    
+}
+.boxPesquisa:hover > .pesquisaInput{
+    width: 150px;
+    padding: 0 20px;
+} 
+.boxPesquisa:hover > .pesquisaBotao{
+    background: gray;
 }
 .aLogin{
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 
 }
+
 a.aLogin:link, .aLogin:visited{
     text-decoration: none;
     
 }
+
 .aLogin:hover{
     color: white;
     background-color: rgba(0, 0, 0, 0.336);
     border-radius: 1.2rem;
 
 }
+
 .titulo{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto Slab;
     font-size: 1.7rem;
     color: rgb(15, 13, 13);
 }
+
+/*Parte dos links*/
+
 .ulIndex{
     padding: 20px;
     align-items: center;
@@ -77,7 +180,10 @@ a.aLogin:link, .aLogin:visited{
 }
 .ulIndex ul li a{
     color: black;
+ 
 }
+
+/*Area do carousel*/
 /*#formPrincipal{
     background-color: gray;
     border-bottom: 1.2px solid black;
@@ -104,10 +210,72 @@ img{
 div.carousel-caption.bg{  
     background-color: rgba(0,0,0,0.6);
     border: none ;
-    
+    font-family: Roboto Slab;
 }
-div.carousel-item{
-    width: 800px;
-    height: 100%;
+/*Rodapé*/
+.rodape{
+    background: #a52a2a;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rodape h2{
+    font-family: Roboto Slab;
+    font-size: 1.7rem;
+    color: rgb(15, 13, 13);
+}
+.rodape ul{
+    padding-right: 30px;
+}
+.rodape li{
+    margin-top: 3px;
+    font-size: 16px;
+}
+.rodape li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
 
+/*Formulario de Calculo*/
+body .calculo{
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding: 10px;
+    align-items: center;
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    background: #a52a2a;
+    border-radius: 10px;
+}
+.linhaCalculo{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.linhaCalculo .areaInput{
+    padding: 5px;
+}
+section .botao{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px
+}
+.linhaTituloCalculo{
+    text-align: center;
+    padding: +20px;
+}
+.linhaTituloCalculo .titulo{
+    font-size: 25px;
+}
+.menuCalculo .linkIndex{
+    font-family: Roboto Slab;
+    font-size: 1.7rem;
+    color: rgb(15, 13, 13);
 }

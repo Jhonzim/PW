@@ -24,6 +24,12 @@
                 <ul class="menu">
                     <li><a class="aLogin" href="cadastro.php">Cadastre-se aqui</a></li>
                     <li><a class="aLogin" href="login.php">Login</a></li>
+                    <li>
+                        <form method="GET" action="busca.php" class="boxPesquisa">
+                            <input type="text" placeholder="Pesquisar" class="pesquisaInput">
+                            <button type="submit" class="pesquisaBotao"><img  src="/image/lupa.svg" alt="Lupa" ></button>
+                        </div>                
+                    </li>
                 </ul>
             </div>
         </div>
@@ -87,6 +93,14 @@
             </div>
             <div class="col"></div>
         </div>
+            <div class="rodape">
+                <h2>Entre em contato</h2>
+                <ul>
+                    <li>Número de contato</li>
+                    <li>Endereço da empresa</li>
+                    <li>Instagram: <a href="#">@instagram</a></li>
+                </ul>
+            </div>
     </div>
 </div>
 <script src="js/jquery-3.2.1.min.js"></script>

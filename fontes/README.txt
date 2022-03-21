@@ -1,32 +1,26 @@
-Josefin Sans Variable Font
-==========================
+Roboto Slab Variable Font
+=========================
 
-This download contains Josefin Sans as both variable fonts and static fonts.
+This download contains Roboto Slab as both a variable font and static fonts.
 
-Josefin Sans is a variable font with this axis:
+Roboto Slab is a variable font with this axis:
   wght
 
-This means all the styles are contained in these files:
-  JosefinSans-VariableFont_wght.ttf
-  JosefinSans-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  RobotoSlab-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Josefin Sans:
-  static/JosefinSans-Thin.ttf
-  static/JosefinSans-ExtraLight.ttf
-  static/JosefinSans-Light.ttf
-  static/JosefinSans-Regular.ttf
-  static/JosefinSans-Medium.ttf
-  static/JosefinSans-SemiBold.ttf
-  static/JosefinSans-Bold.ttf
-  static/JosefinSans-ThinItalic.ttf
-  static/JosefinSans-ExtraLightItalic.ttf
-  static/JosefinSans-LightItalic.ttf
-  static/JosefinSans-Italic.ttf
-  static/JosefinSans-MediumItalic.ttf
-  static/JosefinSans-SemiBoldItalic.ttf
-  static/JosefinSans-BoldItalic.ttf
+in those cases you can use the static font files for Roboto Slab:
+  static/RobotoSlab-Thin.ttf
+  static/RobotoSlab-ExtraLight.ttf
+  static/RobotoSlab-Light.ttf
+  static/RobotoSlab-Regular.ttf
+  static/RobotoSlab-Medium.ttf
+  static/RobotoSlab-SemiBold.ttf
+  static/RobotoSlab-Bold.ttf
+  static/RobotoSlab-ExtraBold.ttf
+  static/RobotoSlab-Black.ttf
 
 Get started
 -----------
@@ -67,11 +61,11 @@ Android Apps
 
 License
 -------
-Please read the full license text (OFL.txt) to understand the permissions,
+Please read the full license text (LICENSE.txt) to understand the permissions,
 restrictions and requirements for usage, redistribution, and modification.
 
 You can use them freely in your products & projects - print or digital,
-commercial or otherwise. However, you can't sell the fonts on their own.
+commercial or otherwise.
 
 This isn't legal advice, please consider consulting a lawyer and see the full
 license for all details.
